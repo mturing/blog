@@ -12,8 +12,9 @@ tag: 学习笔记
 一、安装nodejs 插件
 ===================
 我开始的时候是通过ppackage control安装的，但后面再bulid的时候出现了中文编码的问题，我一时没有找到解决方案，后面在网上搜到相对应解决方案，在github上面下载该项目的zip包 然后自己复制到sublime text的packpage 下 nodejs 插件的github地址[https://github.com/tanepiper/SublimeText-Nodejs ](https://github.com/tanepiper/SublimeText-Nodejs) ，关于自己packpage文件夹sublime text 3的preferences 下面的browser package点击就能打开相对应的文件，一般这个目录在c盘的user 下面 有一级目录会被隐藏，应该打开隐藏目录课件。
+
 二、修改插件的配置文件
-===============
+====================
 Nodejs.sublime-settings 这个文件是设置相对应的nodeJS的安装目录的配置成下面
 
 ```
