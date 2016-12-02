@@ -49,9 +49,10 @@ Nodejs.sublime-bulid文件就相对复杂一些
   "encoding": "utf8",
   "windows":
     {
-		// 1      "cmd": ["taskkill /F /IM node.exe & node", "$file"]
 
-	//	 2 "cmd": ["node", "$file"]
+
+	//	1 "cmd": ["taskkill","/F", "/IM", "node.exe","&","node", "$file"]
+	
          "cmd": ["nodemon", "$file"]
     },
   "linux":
@@ -65,7 +66,7 @@ Nodejs.sublime-bulid文件就相对复杂一些
 }
 
 ```
-有两种配置方式 一、windows{ 1 2}我注释掉的就是我开始的配置，表示 先把node进程结束掉 在启动node 执行当前文件，（ps 我开始的时候没有加上1 导致我每次Ctrl+B 的时候都报错 说node 端口已经背占了 每次只能够在cmd中 自己来结束进程）
+有两种配置方式 一、windows{ 1 }我注释掉的就是我开始的配置，表示 先把node进程结束掉 在启动node 执行当前文件，（ps 我开始的时候没有加上1 导致我每次Ctrl+B 的时候都报错 说node 端口已经背占了 每次只能够在cmd中 自己来结束进程）
 配置方式二、第二种就是在安装了nodemon 之后，才可以配置的关于nodemon 自己搜，然后就不用每次修改之后从新Ctrl+b
 他自动就重启了。
 
